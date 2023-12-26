@@ -18,14 +18,13 @@
 
 <body>
     <!-- Responsive navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="#!">My Portfolio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav mx-auto mb-2 py-3 mb-lg-0 lead fw-normal">
                     <li class="nav-item"><a class="nav-link active" aria-current="page" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#certificate">Certificate</a></li>
@@ -36,11 +35,11 @@
         </div>
     </nav>
     <!-- Header - set the background image for the header in the line below-->
-    <header class="py-5 bg-image-full" style="background-image: url('img/sky-landscape.jpg')" id="home">
+    <header class="py-5 bg-image-full" style="background-image: url('img/bg.svg')" id="home">
         <div class="text-center my-5">
             <img class="img-fluid rounded-circle" src="img/tes.jpg" alt="..." width="200" heigth="200" />
-            <h1 class="text-white fs-3 fw-bolder">Hello, I'm Irsyad Halimi</h1>
-            <p class="text-white mb-0">Junior Web Developer</p>
+            <h1 class="text-white fs-3 pt-5 fw-bolder">Irsyad Halimi</h1>
+            <h5 class="text-white mb-0">Web Developer</h5>
         </div>
     </header>
     <!-- Content section-->
@@ -48,11 +47,8 @@
         <div class="container my-5">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
-                    <h2>Welcome to my personal page</h2>
-                    <p class="lead">Graduate Soon from Bina Sarana Informatika University in 2024 with an Associate
-                        Degree
-                        of Information Systems. </p>
-                    <p class="mb-0">My name Irsyad Halimi, 20 years old, I am an active D3 Information Systems student
+                    <h2>About Me</h2>
+                    <p class="mb-0">My name Irsyad Halimi, I'm 21 years old, D3 Information Systems student
                         at
                         Bina Sarana Informatika University and a member of
                         the Association of Study Programs Organization, HIMASI.
@@ -61,6 +57,94 @@
             </div>
         </div>
     </section>
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+    <!-- Image element - set the background image for the header in the line below-->
+    <div class="py-5 bg-image-full" style="background-image: url('img/bg-b.svg')">
+        <!-- Put anything you want here! The spacer below with inline CSS is just for demo purposes!-->
+        <div style="height: 5rem"></div>
+    </div>
+    <!-- Content section-->
+    <section class="py-5" id="project">
+        <div class="container-sm my-5">
+            <div class="row justify-content-center">
+                <h3 class="my-5 text-center">Projects</h3>
+                <div class="col-lg-6 my-3 py-3 px-5">
+                    <img src="img/projects/Sitata.png" class="card-img-top mb-3 shadow" style="cursor: pointer;" alt="..." onclick="openModal('img/projects/Sitata.png')">
+                    <p class="lead fw-normal">Sitata</p>
+                    <p class="mb-0">I was involved in the development of the Village News Website Portal (Portal Berita Desa), constructed using the PHP framework Codeigniter 3. In this project, I handled both the Frontend and Backend responsibilities.
+                    </p>
+                    <a href="https://github.com/IrsyadHalimi/sitata">
+                        Github Sitata Repository
+                    </a>
+                </div>
+                <div class="col-lg-6 my-3 py-3 px-5">
+                    <img src="img/projects/Qwords.png" class="card-img-top mb-3 shadow" style="cursor: pointer;" alt="..." onclick="openModal('img/projects/Qwords.png')">
+                    <p class="lead fw-normal">Redesign Qwords Landing Page</p>
+                    <p class="mb-0">I participated in the Redesign Qwords Company Landing Page Website in Diploy program: Qwords X Rakamin Fullstack Developer Project Based Internship, built with PHP framework Codeigniter 3 and Bootstrap 5 
+                    </p>
+                    <a href="https://github.com/IrsyadHalimi/redesign-qwords-landing-page">
+                        Github Repository
+                    </a>
+                </div>
+                <div class="col-lg-6 my-3 py-3 px-5">
+                    <img src="img/projects/CattleDiag.png" class="card-img-top mb-3 shadow" style="cursor: pointer;" alt="..." onclick="openModal('img/projects/CattleDiag.png')">
+                    <p class="lead fw-normal">CattleDiag</p>
+                    <p class="mb-0">My Capstone Team Project at Bangkit Academy 2023 involved developing a mobile app for diagnosing livestock diseases. I served as the Backend Developer responsible for building the web service using the Hapi framework in Node.js and deploying it on Google Cloud.
+                    </p>
+                    <a href="https://github.com/IrsyadHalimi/CattleDiag">
+                        Github CattleDiag Repository
+                    </a>
+                </div>
+                <div class="col-lg-6 my-3 py-3 px-5">
+                    <img src="img/projects/Sibershop.png" class="card-img-top mb-3 shadow" style="cursor: pointer;" alt="..." onclick="openModal('img/projects/Sibershop.png')">
+                    <p class="lead fw-normal">Sibershop</p>
+                    <p class="mb-0">Barbershop Website project, which was built using the PHP framework Codeigniter 3. It was my first project working with a team consisting of my classmates.
+                    </p>
+                    <a href="https://github.com/IrsyadHalimi/SIBERSHOP">
+                        Github Sibershop Repository
+                    </a>
+                </div>
+                <div class="col-lg-6 my-3 py-3 px-5">
+                    <img src="img/projects/Notes-API.png" class="card-img-top mb-3 shadow" style="cursor: pointer;" alt="..." onclick="openModal('img/projects/Notes-API.png')">
+                    <p class="lead fw-normal">Notes App Back-End</p>
+                    <p class="mb-0">A simple Notes App, built with Node.Js and Hapi Framework</p>
+                    <a href="https://github.com/IrsyadHalimi/notes-app-back-end">
+                        Github Notes-App Repository
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5" id="project">
+        <div class="container-sm my-5">
+            <di class="row justify-content-center">
+                <h3 class="text-center">Skills</h3>
+                <div class="col-lg-6 my-3 py-3">
+                    <button class="h-skill">PHP</button>
+                    <button class="h-skill">Python</button>
+                    <button class="h-skill">Javascript</button>
+                    <button class="h-skill">HTML</button>
+                    <button class="h-skill">MySQL</button>
+                    <button class="h-skill">Google Cloud</button>
+                    <button class="h-skill">Object-Oriented
+                        Programming (OOP)</button>
+                    <button class="s-skill">Teamwork</button>
+                    <button class="s-skill">Communication</button>
+                    <button class="s-skill">Analytical</button>
+                    <button class="s-skill">Time Management</button>
+                    <button class="s-skill">Problem-Solving</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Image element - set the background image for the header in the line below-->
+    <div class="py-5 bg-image-full" style="background-image: url('img/bg-c.svg')">
+        <!-- Put anything you want here! The spacer below with inline CSS is just for demo purposes!-->
+        <div style="height: 5rem"></div>
+    </div>
     <section class="ftco-section" id="certificate">
         <div class="container">
             <div class="row">
@@ -173,38 +257,7 @@
             </div>
         </div>
     </section>
-    <!-- Image element - set the background image for the header in the line below-->
-    <div class="py-5 bg-image-full" style="background-image: url('img/sky-landscape.jpg')">
-        <!-- Put anything you want here! The spacer below with inline CSS is just for demo purposes!-->
-        <div style="height: 5rem"></div>
-    </div>
-    <!-- Content section-->
-    <section class="py-5" id="project">
-        <div class="container my-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <h4>Projects</h4>
-                    <p class="lead">SIBERSHOP</p>
-                    <a href="https://github.com/IrsyadHalimi/SIBERSHOP.git">
-                        <p class="mb-0">https://github.com/IrsyadHalimi/SIBERSHOP.git</p>
-                    </a>
-                    <p class="mb-0">Barbershop Website, built with PHP framework Codeigniter 3, my first team project
-                    </p><br>
-                    <p class="lead">Notes App Back-End</p>
-                    <a href="https://github.com/IrsyadHalimi/notes-app-back-end.git">
-                        <p class="mb-0">https://github.com/IrsyadHalimi/notes-app-back-end.git</p>
-                    </a>
-                    <p class="mb-0">A simple Notes App, with Node.Js and Hapi Framework</p>
-                    <br><br><br>
-                    <h4>Skills</h4>
-                    <p class="lead">Javascript, Python (Programming Language), PHP, HTML5, SQL, Object-Oriented
-                        Programming (OOP), Cloud Computing, Data Structures, Testing, Error handling, Adobe Illustrator
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div class="py-5 bg-image-full" style="background-image: url('img/sky-landscape.jpg')">
+    <div class="py-5 bg-image-full" style="background-image: url('img/bg-a.svg')">
         <!-- Put anything you want here! The spacer below with inline CSS is just for demo purposes!-->
         <div style="height: 5rem"></div>
     </div>
@@ -215,7 +268,7 @@
                     <h4>Education</h4>
                     <p class="mb-0">Associate of Information Systems</p>
                     <p class="lead">Bina Sarana Informatika University</p>
-                    <p class="mb-0">September 2021 - Present</p><br><br>
+                    <p class="mb-0">2021 - 2024</p><br><br>
 
                     <br>
                     <br>
